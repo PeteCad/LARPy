@@ -27,5 +27,5 @@
 </ul>
 
 <h2>License</h2>
-<p>GNU General Public License v3.0</p>
+<p>GNU Affero General Public License v3.0</p>
 <p>See file COPYING
