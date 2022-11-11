@@ -1,4 +1,4 @@
-<h1>LARPy - a user database tool for character generation</h1>
+<h1>LARPy - a user database tool for character maintenance</h1>
 <p>This is my first major from the ground up project, unsolited advice given with grace is highly welcome. </p>
 <h2>Overview</h2>
 <p>This will be an integrated back end for Live Action Role Play(LARP) character
