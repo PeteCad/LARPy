@@ -1,0 +1,33 @@
+#:kivy 2.0.0
+
+
+<LARPy>
+    txt_string: display_search
+    search_input: search_box
+    BoxLayout:
+        size:root.width,root.height
+        orientation: "vertical"
+        Label:
+            id:display_search
+            font_size:"20dp"
+        BoxLayout:
+            height:"30dp"
+            size_hint_y:None
+            TextInput:
+                id:search_box
+                font_size:"20dp"
+                size_hint_y:None
+                height:self.minimum_height
+                size_hint_x:75
+                multiline: False
+                on_text_validate: root.search_txt()
+            Button:
+                text:"Search"
+                size_hint_y:None
+                size_hint_x:25
+                on_press: root.search_txt()
+        Button:
+            text: "Exit Button"
+            size_hint_y: None
+            height: 50
+            on_press: app.stop()

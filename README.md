@@ -13,8 +13,6 @@
     updates across a selection of player's attributes(eg adding player experience or conditional 
     counters)</p>
 <p>Stretch ideas for this project to keep in mind are:</p>
-<h2>How to install and run</h2>
-<p>This program is written with python 3.10. Further instructions to come as it gains complexity.</p>
 <ul>
     <li>a player/plot web interface, likely with Django</li> 
     <li>ability for player to created and curate new characters and submit for approval</li>
@@ -25,6 +23,9 @@
     <li>expansion into a non-sqlite database</li>
     <li>As a separate project a mobile app for players</li>
 </ul>
+<h2>How to install and run</h2>
+<p>This program is written with python 3.10. Kivy 2.1.0 will be used for a cross-platform user interface, we hope.</p>
+<p>Further instructions to come as it gains complexity.</p>
 
 <h2>License</h2>
 <p>GNU Affero General Public License v3.0</p>
