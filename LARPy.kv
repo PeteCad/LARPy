@@ -1,18 +1,27 @@
 <LARPyRoot>
-    # Label:
-    #     text:"LARPy"
-    #     size_hint_y: None
-    #     size_hint_x: None
-    #     height:"20dp"
-    #     width:
-    AdminPanel:
-        size:(300,300)
-        Image:
-            # pos: self.pos
-            # size: self.size
+    canvas.before:
+        Rectangle:
+            pos:self.pos
+            size:self.size
             source:'resources\graphics\LARPyAdminBG.png'
-        # Button:
-        #     size_hint_y:None
-        #     height: "15dp"
-        #     text: "Wut?"
+
+<AdminPanel@BoxLayout>:
+    orientation:"vertical"
+    Label:
+        text:"LARPy Admin"
+        size_hint_y: None
+        size_hint_x: None
+        height:"20dp"
+        width:root.width
+    Button:
+        size_hint_y: None
+        size_hint_x: None
+        height:"20dp"
+        text:"Create Game"
+        on_press: root.game_create()
+    Button:
+        size_hint_y:None
+        height: "20dp"
+        text: "QUIT"
+        on_press: app.quit()
     
