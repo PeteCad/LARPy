@@ -6,18 +6,19 @@ from kivy.properties import (
 from kivy.uix.widget import Widget
 from kivy.uix.image import Image
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
 # Project imports
 from db_func import *
 
 #Start up the Root window and set initial screen
 #We'll change this based on user permissions later
-class LARPyRoot(Widget):
+class LARPyRoot(BoxLayout):
     menu_list={}
     
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.show_menu(menu="admin")     #create splash screen(will be login later)
-        
+
     def show_menu(self, **kwargs):
         
         #This code should be moved to more appropriate places as they are
@@ -53,6 +54,8 @@ class AdminPanel(BoxLayout):
     def game_create(self):
         game_create()
 
+# class Login(GridLayout):
+#     pass
 class LARPyApp(App):
     def build(self):
         larpy_main=LARPyRoot()

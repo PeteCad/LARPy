@@ -4,18 +4,48 @@
             pos:self.pos
             size:self.size
             source:'resources\graphics\LARPyAdminBG.png'
+    # FloatLayout:
+    #     pos:(0,0)
+    #     size:root.size
+        
+<Login@GridLayout>:
+    rgba:(20/255,20/255,20/255,1)
+    cols:2
+    size_hint_x:0.5
+    pos_hint_x: root.width/2
+    pos_hint_y: root.height/2
+    # pos:self.parent.pos
+    Label:
+        color:(0,0,0,1)
+        size_hint_y: None
+        height:"20dp"
+        text:"User:"
+    TextInput:
+        size_hint_y: None
+        height:"20dp"
+        multiline:False
+    Label:
+        color:(0,0,0,1)
+        size_hint_y: None
+        height:"20dp"
+        text:"Password:"
+    TextInput:
+        size_hint_y: None
+        height:"20dp"
+        multiline:False
 
-<AdminPanel@BoxLayout>:
+<AdminPanel>:
     orientation:"vertical"
     Label:
         text:"LARPy Admin"
+        color:(128/255,128/255,0/255,1)
         size_hint_y: None
-        size_hint_x: None
+        size_hint_x: 1
         height:"20dp"
-        width:root.width
+    Login:
+
     Button:
         size_hint_y: None
-        size_hint_x: None
         height:"20dp"
         text:"Create Game"
         on_press: root.game_create()
