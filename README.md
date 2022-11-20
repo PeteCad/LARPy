@@ -22,7 +22,9 @@
     <li>PDF output using predefined templates</li>
     <li>expansion into a non-sqlite database</li>
     <li>As a separate project a mobile app for players</li>
+    <li>Character Profile Pics</li>
 </ul>
+<p>The prototype UI can be found in the <a href="https://github.com/PeteCad/LARPy/tree/main/UI Layout Mockup/">/UI Layout Mockup</a> folder</p>
 <h2>How to install and run</h2>
 <p>This program is written with python 3.10. Kivy 2.1.0 will be used for a cross-platform user interface, we hope.</p>
 <p>Further instructions to come as it gains complexity.</p>
